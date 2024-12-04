@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESP32 Control App</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>ESP32 Smart Controller</h1>
+  </header>
+
+  <main>
+    <!-- Authentication Section -->
+    <section id="auth-section">
+      <h2>Authentication</h2>
+      <p>Use your device's biometric system to proceed:</p>
+      <button id="authenticate">Authenticate</button>
+      <div id="auth-status" class="status"></div>
+    </section>
+
+    <!-- Connection Section -->
+    <section id="connection" class="hidden">
+      <h2>Connect to ESP32</h2>
+      <button id="connectBluetooth">Connect via Bluetooth</button>
+      <button id="connectOnline">Connect Online</button>
+      <div id="connection-status" class="status"></div>
+    </section>
+
+    <!-- Control Section -->
+    <section id="controls" class="hidden">
+      <h2>Light Controls</h2>
+      <button id="turnOn">Turn On Light</button>
+      <button id="turnOff">Turn Off Light</button>
+      <div id="light-status" class="status"></div>
+    </section>
+
+    <!-- Logs Section -->
+    <section id="logs" class="hidden">
+      <h2>Usage Logs</h2>
+      <button id="viewLogs">View Logs</button>
+      <pre id="log-output"></pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>Powered by ESP32 & Your Mobile</p>
+  </footer>
+</body>
+</html>
